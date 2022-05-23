@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <title>Signup Now!</title>
-    <link rel="stylesheet" src="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="background">
+        <div class="logo-space">
+            <img src="logo.png" alt="logo">
+            <span>Sign-up Page</span>
+        </div>
+    </div>
+    <form action="" method="post">
+        <div class="form-desc">
+            <p>
+                This is a sample sign-up page by XavS.
+                Forms are tricky to style.
+                But they are not impossible to style.
+                It can take some time depending on your idea.
+                This is the end of this paragraph.
+            </p>
+            <p>Wow this is very cool</p>
+        </div>
+        <div class="input-section">
+            <p class="input-row">
+                <label for="firstname">First Name</label>
+                <input type="text" name="firstname" id="firstname">
+                <label for="lastname">Last Name</label>
+                <input type="text" name="lastname" id="lastname">
+            </p>
+            <p class="input-row">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+                <label for="number">Phone Number</label>
+                <input type="tel" name="number" id="number">
+            </p>
+            <p class="input-row">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+                <label for="confirm-pswd">Confirm Password</label>
+                <input type="password" name="confirm-pswd" id="confirm-pswd">
+            </p>        
+        </div>
+        <div>
+            <button type="submit">Sign-up!</button>
+            <span>Already have an account? Click here to login</span>
+        </div>
+    </form>
 </body>
 </html>

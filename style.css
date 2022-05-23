@@ -1,0 +1,105 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+    font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root {
+    --text-col: #d9d9d9;
+    --bg-col: #1b1d2e;
+    --input-col: #33313c;
+
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    height: 100vh;
+}
+
+form {
+    background-color: var(--bg-col);
+    color: var(--text-col);
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 65%;
+    height: 100%;
+}
+
+form > div {
+    padding-left: 48px;
+}
+
+input {
+    width: 128px;
+    height: 24px;
+}
+
+button {
+    width: 128px;
+}
+
+.form-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1em;
+    width: 65%;
+    height: 33%;
+    font-size: 24px;
+}
+
+.input-section {
+    background-color: var(--input-col);
+    margin-top: 48px;
+}
+
+.background {
+    background-image: url("background.jpeg");
+    background-size: auto 100%;
+    background-repeat: repeat;
+    width: 35%;
+    height: 100%;
+}
+
+.logo-space {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 35%;
+    height: 128px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo-space > img {
+    margin-left: 32px;
+    width: 64px;
+    height: auto;
+}
+
+.logo-space > span{
+    flex: 1;
+    font-family: sans-serif;
+    font-size: 3.5rem;
+    color: var(--text-col);
+}
