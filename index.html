@@ -19,33 +19,46 @@
                 Forms are tricky to style.
                 But they are not impossible to style.
                 It can take some time depending on your idea.
+                Forms. Forms forms forms. 
                 This is the end of this paragraph.
             </p>
             <p>Wow this is very cool</p>
         </div>
         <div class="input-section">
-            <p class="input-row">
-                <label for="firstname">First Name</label>
-                <input type="text" name="firstname" id="firstname">
-                <label for="lastname">Last Name</label>
-                <input type="text" name="lastname" id="lastname">
-            </p>
-            <p class="input-row">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email">
-                <label for="number">Phone Number</label>
-                <input type="tel" name="number" id="number">
-            </p>
-            <p class="input-row">
-                <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-                <label for="confirm-pswd">Confirm Password</label>
-                <input type="password" name="confirm-pswd" id="confirm-pswd">
-            </p>        
+            <div>
+                <span class="input-set">
+                    <input type="text" name="firstname" id="firstname" placeholder=" ">
+                    <label for="firstname">First Name</label>
+                </span>
+                <span class="input-set">
+                    <input type="text" name="lastname" id="lastname" placeholder=" ">
+                    <label for="lastname">Last Name</label>
+                </span>
+            </div>
+            <div>
+                <span class="input-set">
+                    <input type="email" name="email" id="email" placeholder=" ">
+                    <label for="email">Email</label>
+                </span>
+                <span class="input-set">
+                    <input type="tel" name="number" id="number" placeholder=" ">
+                    <label for="number">Phone Number</label>
+                </span>
+            </div>
+            <div>
+                <span class="input-set">
+                    <input type="password" name="password" id="password" placeholder=" ">
+                    <label for="password">Password</label>
+                </span>
+                <span class="input-set">
+                    <input type="password" name="confirm-pswd" id="confirm-pswd" placeholder=" ">
+                    <label for="confirm-pswd">Confirm Password</label>
+                </span>
+            </div>        
         </div>
         <div>
             <button type="submit">Sign-up!</button>
-            <span>Already have an account? Click here to login</span>
+            <div class="login-reminder">Already have an account? Click here to login</div>
         </div>
     </form>
 </body>
