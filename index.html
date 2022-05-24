@@ -4,67 +4,62 @@
     <meta charset="UTF-8">
     <title>Signup Now!</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="main">
-        <div class="background">
-            <div class="logo-space">
-                <img src="logo.png" alt="logo">
-                <span>| XavS.AI</span>
+    <div class="background">
+        <div class="logo">
+            <img src="img/logo.png" alt="logo">
+            <div>XAVS.AI</div>
+        </div>
+    </div>
+    <form action="" method="post">
+        <div>
+            <p class="form-desc">
+                Dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                nisi ut aliquip ex ea commodo consequat.
+                <br><br> 
+                This is an interesting sentence.
+            </p>
+            <div class="form-main">
+                <div class="input-group">
+                    <p>
+                        <span class="input-container">
+                            <input type="text" name="firstname" id="firstname" placeholder=" " required>
+                            <label for="firstname">First Name</label>
+                        </span>
+                        <span class="input-container">
+                            <input type="text" name="lastname" id="lastname" placeholder=" " required>
+                            <label for="lastname">Last Name</label>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="input-container">
+                            <input type="email" name="email" id="email" placeholder=" " required>
+                            <label for="email">Email</label>
+                        </span>
+                        <span class="input-container">
+                            <input type="tel" name="tel" id="tel" placeholder=" " required>
+                            <label for="tel">Phone Number</label>
+                        </span>
+                    </p>
+                    <p>
+                        <span class="input-container">
+                            <input type="password" name="password" id="password" placeholder=" " required>
+                            <label for="password">Password</label>
+                        </span>
+                        <span class="input-container">
+                            <input type="password" name="confpassword" id="confpassword" placeholder=" " required>
+                            <label for="confpassword">Confirm Password</label>
+                        </span>
+                    </p>
+                </div>
+                <button type="submit">Sign-up</button>
+                <div>Already a member? <a href="">Click here to sign-in</a></div>
             </div>
         </div>
-        <form action="" method="post">
-            <div class="para"></div>
-            <div class="rect"></div>
-            <div class="form-desc">
-                <p>
-                    This is a sample sign-up page by XavS.
-                    Forms are tricky to style.
-                    But they are not impossible to style.
-                    It can take some time depending on your idea.
-                    Forms. Forms forms forms.
-                    This is the end of this paragraph.
-                </p>
-                <p><em>This an important and catchy sentence!</em></p>
-            </div>
-            <div class="input-section">
-                <div>
-                    <span class="input-set">
-                        <input type="text" name="firstname" id="firstname" placeholder=" " required>
-                        <label for="firstname">First Name</label>
-                    </span>
-                    <span class="input-set">
-                        <input type="text" name="lastname" id="lastname" placeholder=" " required>
-                        <label for="lastname">Last Name</label>
-                    </span>
-                </div>
-                <div>
-                    <span class="input-set">
-                        <input type="email" name="email" id="email" placeholder=" " required>
-                        <label for="email">Email</label>
-                    </span>
-                    <span class="input-set">
-                        <input type="tel" name="number" id="number" placeholder=" " required>
-                        <label for="number">Phone Number</label>
-                    </span>
-                </div>
-                <div>
-                    <span class="input-set">
-                        <input type="password" name="password" id="password" placeholder=" " required>
-                        <label for="password">Password</label>
-                    </span>
-                    <span class="input-set">
-                        <input type="password" name="confirm-pswd" id="confirm-pswd" placeholder=" " required>
-                        <label for="confirm-pswd">Confirm Password</label>
-                    </span>
-                </div>
-            </div>
-            <div>
-                <button type="submit">Sign-up!</button>
-                <div class="login-reminder">Already have an account? <a href="">Click here to login</a></div>
-            </div>
-        </form>
-    </div>
-    <div class="footer"><div>© 2022 XavS.AI</div></div>
+    </form>
 </body>
 </html>
