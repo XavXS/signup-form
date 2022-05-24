@@ -54,6 +54,7 @@ time, mark, audio, video {
 }
 
 body {
+    background-color: var(--desc-col);
     display: flex;
     flex-direction: column;
     height: 100vh;
