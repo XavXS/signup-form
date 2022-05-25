@@ -53,6 +53,10 @@ time, mark, audio, video {
     box-sizing: border-box;
 }
 
+a {
+    color: var(--accent-col);
+}
+
 body {
     background-color: var(--bg-col);
     display: flex;
@@ -146,6 +150,7 @@ button + div {
     flex: 1;
     background-image: url('img/background.jpeg');
     height: 100vh;
+    position: relative;
 }
 
 .logo {
@@ -161,6 +166,18 @@ button + div {
 
     font-family: 'LEMON MILK';
     font-size: 2.5rem;
+}
+
+.logo::after {
+    content: "Image by papers.co";
+    background-color: var(--input-col);
+    color: var(--text-col);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px 8px;
+    font-size: 1rem;
+    font-family: 'Roboto';
 }
 
 .logo > img {
