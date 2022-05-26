@@ -17,10 +17,10 @@
         <div class="para"></div>
         <div>
             <p class="form-desc">
+                This is not a real online service!
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco.
                 <br><br> 
                 Laboris aliquip ex ea commodo consequat.
             </p>
@@ -38,26 +38,65 @@
                     </p>
                     <p>
                         <span class="input-container">
-                            <input type="email" name="email" id="email" placeholder=" " required>
+                            <input type="email" 
+                                    name="email" 
+                                    id="email" 
+                                    placeholder=" " 
+                                    onkeyup="checkEmail();checkTel();toggleList('email');" 
+                                    onfocusin="toggleList('email');" 
+                                    onfocusout="toggleList('email');" 
+                                    required>
                             <label for="email">Email</label>
                         </span>
                         <span class="input-container">
-                            <input type="tel" name="tel" id="tel" placeholder=" " required>
+                            <input type="tel" 
+                                    name="tel" 
+                                    id="tel" 
+                                    placeholder=" " 
+                                    onkeyup="checkTel();checkEmail();toggleList('tel');" 
+                                    onfocusin="toggleList('tel');" 
+                                    onfocusout="toggleList('tel');" 
+                                    required>
                             <label for="tel">Phone Number</label>
                         </span>
+                        <ul class="email tel checklist">
+                            <li class="email">Email must be valid</li>
+                            <li class="ten-digit">Phone number must be 10 digits</li>
+                        </ul>
                     </p>
                     <p>
                         <span class="input-container">
-                            <input type="password" name="password" id="password" placeholder=" " required>
+                            <input type="password" 
+                                    name="password" 
+                                    id="password" 
+                                    placeholder=" " 
+                                    onkeyup="checkPswd();toggleList('password');" 
+                                    onfocusin="toggleList('password');" 
+                                    onfocusout="toggleList('password');" 
+                                    required>
                             <label for="password">Password</label>
                         </span>
                         <span class="input-container">
-                            <input type="password" name="confpassword" id="confpassword" placeholder=" " required>
+                            <input type="password" 
+                                    name="confpassword" 
+                                    id="confpassword" 
+                                    placeholder=" " 
+                                    onkeyup="checkPswd();toggleList('password');" 
+                                    onfocusin="toggleList('password');" 
+                                    onfocusout="toggleList('password');" 
+                                    required>
                             <label for="confpassword">Confirm Password</label>
                         </span>
+                        <ul class="password checklist">
+                            <li class="min">At least 8 characters</li>
+                            <li class="upper">At least 1 uppercase letter</li>
+                            <li class="lower">At least 1 lowercase letter</li>
+                            <li class="num">At least 1 number</li>
+                            <li class="match">Passwords must match</li>
+                        </ul>
                     </p>
                 </div>
-                <button type="submit">Sign-up</button>
+                <button type="button" onclick="submitForm();">Sign-up</button>
                 <div>Already a member? <a href="">Click here to sign-in</a></div>
             </div>
         </div>

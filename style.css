@@ -44,6 +44,8 @@ time, mark, audio, video {
     --desc-col: #000000;
     --accent: 0, 159, 156;
     --accent-col: rgb(var(--accent));
+    --error: rgb(147, 64, 64);
+    --pass: rgb(66, 162, 76);
 
     font-family: 'Roboto';
     font-size: 12px;
@@ -144,6 +146,37 @@ button + div {
     display: inline-block;
     width: 225px;
     height: 40px;
+    transform-origin: top;
+}
+
+.checklist {
+    height: 0;
+    overflow: hidden;
+    color: var(--accent-col);
+    padding-left: 16px;
+    list-style: none;
+    transition: 0.5s;
+}
+
+.checklist.open {
+    height: 2.5em;
+    transition: 0.5s;
+}
+
+.checklist.open.password {
+    height: 6em;
+}
+
+.checklist > .error {
+    color: var(--error);
+}
+
+.checklist > :not(.error)::before {
+    content: '✔ '
+}
+
+.checklist > .error::before {
+    content: '✖ ';
 }
 
 .background {
