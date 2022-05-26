@@ -8,8 +8,8 @@ let conf = form.querySelector('#confpassword');
 
 let etChecklist = form.querySelector('.email.tel.checklist');
 let pswdChecklist = form.querySelector('.password.checklist');
-let etHeight = (etChecklist.children[1].offsetHeight * etChecklist.childElementCount) + 'px';
-let pswdHeight = (pswdChecklist.children[1].offsetHeight * pswdChecklist.childElementCount) + 'px';
+let etHeight = etChecklist.children[1].offsetHeight*2 + 'px';
+let pswdHeight = pswdChecklist.children[1].offsetHeight*5 + 'px';
 
 let emailValid = etChecklist.querySelector('.email');
 let telTenDigit = etChecklist.querySelector('.ten-digit');
