@@ -8,8 +8,6 @@ let conf = form.querySelector('#confpassword');
 
 let etChecklist = form.querySelector('.email.tel.checklist');
 let pswdChecklist = form.querySelector('.password.checklist');
-let etHeight = etChecklist.children[1].offsetHeight*2 + 'px';
-let pswdHeight = pswdChecklist.children[1].offsetHeight*5 + 'px';
 
 let emailValid = etChecklist.querySelector('.email');
 let telTenDigit = etChecklist.querySelector('.ten-digit');
@@ -67,15 +65,19 @@ function toggleList(id) {
         case 'password':
             if(checkPswd() || (!pswd.value && !conf.value))
                 pswdChecklist.style.height = 0;
-            else
-                pswdChecklist.style.height = pswdHeight;
+            else {
+                let liHeight = pswdChecklist.children[1].offsetHeight;
+                pswdChecklist.style.height = liHeight*pswdChecklist.childElementCount+'px';
+            }
             break;
         case 'email':
         case 'tel':
             if((checkEmail() && checkTel()) || (!email.value && !tel.value))
                 etChecklist.style.height = 0;
-            else
-                etChecklist.style.height = etHeight;
+            else {
+                let liHeight = etChecklist.children[1].offsetHeight;
+                etChecklist.style.height = liHeight*etChecklist.childElementCount+'px';
+            }
             break;
         default:
             console.log('Unknown list id!');
