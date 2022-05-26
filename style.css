@@ -158,15 +158,6 @@ button + div {
     transition: 0.5s;
 }
 
-.checklist.open {
-    height: 2.5em;
-    transition: 0.5s;
-}
-
-.checklist.open.password {
-    height: 6em;
-}
-
 .checklist > .error {
     color: var(--error);
 }
